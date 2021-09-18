@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Gluten:wght@300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    position: absolute;
+    font-family:"Syne Mono";
+    font-size: 3vw;
+    background-image: url(images/background.jpg);
+    height: 230vw;
+    width: 100%;
+}
+
+nav
+{
+    width: 7%;
+    position: fixed;
+    background-color: rgb(12, 166, 218);
+    height: 43vw;
+    top: 1%;
+    border-radius:67px 67px 59px 59px;
+    margin-left: 1%;
+    overflow: hidden;
+    display: none; 
+    opacity: 0.8;
+    border:blue solid 3px; 
+}
+
+.ufo
+{
+    position: fixed;
+    background-color: black;
+    text-align: center; 
+    height:6vw;
+    width: 7vw;
+    top: 1%;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin :top ;
+}
+
+@keyframes growDown {
+0% {
+    transform: scaleY(0)
+}
+80% {
+    transform: scaleY(1.1)
+}
+100% {
+    transform: scaleY(1)
+}
+}
+
+nav .menu
+{
+    position: relative;
+    top: 13%;
+    height: 79%;
+    width: 100%;
+}
+
+i
+{
+    position: relative;
+    font-size: 5vw;
+    left: 10%;
+    color: black;
+    margin-top:3vw;
+    text-align: center;
+    align-items: center;
+}
+
+i:hover
+{
+    color: white;
+}
+
+.container
+{
+    position: relative;
+    width: 88%;
+    top: 1vw;
+    height:43vw;
+    color: white;
+    margin-left: 9vw;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+}
+
+.container img
+{
+    position: relative;
+    width: 23%;
+    height: 43%;
+    float: right;
+    top: 2.9%;
+    right: 2%;
+    border-radius: 50%;
+    border:white solid 2px;
+    box-shadow: blue 2px 2px;
+}
+
+.container p
+{
+    position: relative;
+    top: 25%;
+}
+
+.container1
+{
+    position: relative;
+    width: 91%;
+    top: 2vw;
+    height:53vw;
+    color: black;
+    margin-left: 9vw;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+    font-family: "Syne Mono";
+}
+
+.container2
+{
+    position: relative;
+    width: 91%;
+    top: 2vw;
+    height:53vw;
+    color: white;
+    margin-left: 9vw;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+    font-family: "Syne Mono";
+    text-align: center;
+}
+
+.container1 .column
+{
+    position: relative;
+    width: 30% ;
+    height: 77%;
+    color: white;
+    border-radius: 2vw;
+    float: left;
+    top: 8%;
+    margin-left: 0.5vw;
+    margin-right: 0.7vw;
+    padding-left: 1%;
+    padding-top: 1%;
+    border:white solid 2px;
+}
+
+.container1 .heading
+{
+    position: relative;
+    color: white;
+    top: 1vw;
+    text-align: center;
+}
+
+
+.column:hover
+{
+    opacity: 0.7;
+    color: black;
+    background-color: white;
+    box-shadow: white 2px 2px 2px ;
+}
+
+.column h5
+{
+    margin-bottom: 1vw;
+}
+
+.container2 .window
+{
+    position: relative;
+    width: 96% ;
+    height: 77%;
+    color: white;
+    border-radius: 2vw;
+    float: left;
+    top: 8%;
+    background-color: rgb(37, 199, 253);
+    background-image: url(images/screen.jpg);
+    background-size: 100%;
+    margin-left: 0.5vw;
+    margin-right: 0.7vw;
+    padding-left: 1%;
+    padding-top: 1%;
+    border:white solid 2px;
+    font-family: "Syne Mono";
+    text-align: center;
+}
+.window .option
+{
+    position: relative;
+    top: 2.7vw;
+    font-size: 2vw;
+    width: 22%;
+    height: 25vw;
+    margin: 0.5vw;
+    float: left;
+}
+
+.option:hover
+{
+    opacity: 0.7;
+    background-color: rgb(46, 133, 139);
+}
+
+.window img
+{
+    position: relative;
+    background-color: lightblue;
+    margin: 2vw;
+    text-align: center;
+    width: 70%;
+    height: 15vw;
+    border-radius: 2vw;
+}
+
+
+.container2 .window1
+{
+    position: relative;
+    width: 96% ;
+    height: 77%;
+    color: white;
+    border-radius: 2vw;
+    float: left;
+    top: 8%;
+    background-color: rgb(37, 199, 253);
+    background-image: url(images/screen.jpg);
+    background-size: 100%;
+    margin-left: 0.5vw;
+    margin-right: 0.7vw;
+    padding-left: 1%;
+    padding-top: 1%;
+    border:white solid 2px;
+    font-family: "Syne Mono";
+}
+
+.window1 .desc
+{
+    position: relative;
+    top: 5vw;
+    font-size: 2vw;
+    width: 65%;
+    height: 29vw;
+    left: 14vw;
+    margin: 0.5vw;
+    float: left;
+    text-align: justify;
+    
+}
+
+footer
+{
+    position: relative;
+    width: 88%;
+    top: 4vw;
+    height:21vw;
+    color: white;
+    margin-left: 9vw;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+}
+
+footer i
+{
+    color: white;
+    margin: 3vw;
+}
+
+footer i:hover
+{
+    color: lightseagreen;
+}
+
+@media screen and (max-width:500px) {
+
+    *
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    body
+    {
+        position: relative;
+        font-family:"Syne Mono";
+        font-size: 5vw;
+        background-image: url(images/background.jpg);
+        height: 543vw;
+        width: 100%;
+    }
+
+    nav
+    {
+        width: 9%;
+        position: fixed;
+        background-color: rgb(12, 166, 218);
+        height: 40%;
+        top: 1%;
+        border-radius:67px 67px 59px 59px;
+        margin-left: 1%;
+        overflow: hidden;
+        display: none; 
+        opacity: 0.8;
+        border:blue solid 3px; 
+    }
+
+    .ufo
+    {
+        position: fixed;
+        background-color: black;
+        text-align: center; 
+        height:8vw;
+        width: 9.7vw;
+        top: 1%;
+        border-radius: 50%;
+        z-index: 1;
+        margin-left: 1%;
+        cursor: pointer;
+    }
+
+    .show {
+        display: block;
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin :top ;
+    }
+
+    @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+    }
+
+    nav .menu
+    {
+        position: relative;
+        top: 13%;
+        height: 79%;
+        width: 100%;
+    }
+
+    i
+    {
+        position: relative;
+        font-size: 5vw;
+        left: 10%;
+        color: black;
+        margin-top:7vw;
+        text-align: center;
+        align-items: center;
+    }
+
+    i:hover
+    {
+        color: white;
+    }
+
+    .container
+    {
+        position: relative;
+        width: 85%;
+        top: 1vw;
+        height:118vw;
+        color: white;
+        margin-left: 12vw;
+        padding-left: 1.5%;
+        padding-top: 1%;
+        margin-bottom: 7vw;
+        border-radius: 2vw;
+    }
+
+    .container img
+    {
+        position: relative;
+        width: 24%;
+        height: 21%;
+        float: right;
+        top: 19.9%;
+        right: 2%;
+        border-radius: 50%;
+        border:white solid 2px;
+        box-shadow: blue 2px 2px;
+    }
+
+    .container p
+    {
+        position: relative;
+        top: 25%;
+    }
+
+    .container1
+    {
+        position: relative;
+        width: 87%;
+        top: 2vw;
+        height:187vw;
+        color: black;
+        margin-left: 12vw;
+        margin-bottom: 8vw;
+        border-radius: 2vw;
+        font-family: "Syne Mono";
+    }
+
+    .container1 .column
+    {
+        position: relative;
+        width: 95% ;
+        height: 26.5%;
+        font-size: 5vw;
+        color: white;
+        border-radius: 2vw;
+        float: left;
+        top: 8%;
+        margin-left: 1vw;
+        margin-right: 0.7vw;
+        padding-left: 1%;
+        margin-bottom: 2vw;
+        padding-top: 1%;
+        border:white solid 2px;
+    }
+
+    .container1 .heading
+    {
+        position: relative;
+        color: white;
+        top: 1vw;
+        text-align: center;
+    }
+
+
+    .column:hover
+    {
+        opacity: 0.7;
+        color: black;
+        background-color: white;
+        box-shadow: white 2px 2px 2px ;
+    }
+
+    .column h5
+    {
+        margin-bottom: 1vw;
+    }
+
+    
+    .container2
+    {
+        position: relative;
+        width: 87%;
+        top: 2vw;
+        height:53vw;
+        color: white;
+        margin-left: 12vw;
+        margin-bottom: 5vw;
+        border-radius: 2vw;
+        font-family: "Syne Mono";
+        text-align: center;
+    }
+
+
+    .container2 .window
+    {
+        position: relative;
+        width: 96% ;
+        height: 77%;
+        color: white;
+        border-radius: 2vw;
+        float: left;
+        top: 8%;
+        background-color: rgb(37, 199, 253);
+        background-image: url(images/screen.jpg);
+        background-size: 100%;
+        margin-left: 0.5vw;
+        margin-right: 0.7vw;
+        padding-left: 1%;
+        padding-top: 1%;
+        border:white solid 2px;
+        font-family: "Syne Mono";
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+    .window .option
+    {
+        position: relative;
+        top:1vw;
+        font-size: 2vw;
+        width: 22%;
+        height: 19vw;
+        margin: 0.5vw;
+        float: left;
+    }
+
+    .option:hover
+    {
+        opacity: 0.7;
+        background-color: rgb(46, 133, 139);
+    }
+
+    .window img
+    {
+        position: relative;
+        background-color: lightblue;
+        margin: 2vw;
+        text-align: center;
+        width: 60%;
+        height: 10vw;
+        border-radius: 2vw;
+    }
+
+
+    .container2 .window1
+    {
+        position: relative;
+        width: 96% ;
+        height: 77%;
+        color: white;
+        border-radius: 2vw;
+        float: left;
+        top: 8%;
+        background-color: rgb(37, 199, 253);
+        background-image: url(images/screen.jpg);
+        background-size: 100%;
+        margin-left: 0.5vw;
+        margin-right: 0.7vw;
+        padding-left: 1%;
+        padding-top: 1%;
+        border:white solid 2px;
+        font-family: "Syne Mono";
+    }
+
+    .window1 .desc
+    {
+        position: relative;
+        top: 1vw;
+        font-size: 2vw;
+        width: 65%;
+        height: 29vw;
+        left: 14vw;
+        margin: 0.5vw;
+        float: left;
+        text-align: justify;
+        
+    }
+
+    footer
+    {
+        position: relative;
+        width: 88%;
+        top: 4vw;
+        height:21vw;
+        color: white;
+        margin-left: 9vw;
+        padding-left: 1.5%;
+        padding-top: 1%;
+        margin-bottom: 1vw;
+        border-radius: 2vw;
+        margin-top: 10vw;
+    }
+
+    footer i
+    {
+        color: white;
+        margin: 3vw;
+    }
+
+    footer i:hover
+    {
+        color: lightseagreen;
+    }
+      
+}
